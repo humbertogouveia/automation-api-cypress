@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "open api": "npx serverest"
+    "open api": "npx serverest --porta 3500"
   },
   "keywords": [],
   "author": "Humberto Gouveia",
