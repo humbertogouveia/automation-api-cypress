@@ -1,0 +1,16 @@
+{
+  "name": "ebac-cypress-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open api": "npx serverest"
+  },
+  "keywords": [],
+  "author": "Humberto Gouveia",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.16.0"
+  }
+}
