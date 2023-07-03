@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "open api": "npx serverest --porta 3500"
+    "open api": "npx serverest --porta 3500",
+    "open": "npx cypress open",
+    "run": "npx cypress run"
   },
   "keywords": [],
   "author": "Humberto Gouveia",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^12.16.0"
+    "cypress": "^12.16.0",
+    "joi": "^17.9.2"
   }
 }
