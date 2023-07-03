@@ -17,12 +17,6 @@ pipeline {
       }
     }
 
-    stage('Subir servidor') {
-      steps {
-        sh 'npx serverest'
-      }
-    }
-    
     stage('Executar Testes') {
       steps {
         sh 'npx cypress run'
