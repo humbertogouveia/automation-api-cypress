@@ -1,18 +1,16 @@
 pipeline {
   agent any
-
   tools {
-   nodejs 'NodeJS'
-   git 'git'
+    nodejs 'NodeJS'
   }
 
   stages {
-    stage('Clonar repositório') {
+    stage('Clonar o repositório') {
       steps {
-        git 'https://github.com/humbertogouveia/automation-api-cypress.git'
+        git branch: 'main', url: 'https://github.com/humbertogouveia/automation-api-cypress.git'
       }
     }
-
+    
     stage('Instalar dependências') {
       steps {
         sh 'npm install'
@@ -21,29 +19,11 @@ pipeline {
 
     stage('Subir servidor') {
       steps {
-        sh 'npm run open api'
+        sh 'npx serverest --porta 3500'
       }
     }
-
-    stage('Rodar testes automatizados de API') {
-      steps {
-        sh 'npx cypress run'
-      }
-    }
-
-    stage('Clone UI repository') {
-      steps {
-        git 'https://github.com/humbertogouveia/ebac-cypress-ui.git'
-      }
-    }
-
-    stage('Install dependencies (UI)') {
-      steps {
-        sh 'npm install'
-      }
-    }
-
-    stage('Rodar testes de interface gráfica') {
+    
+    stage('Executar Testes') {
       steps {
         sh 'npx cypress run'
       }
