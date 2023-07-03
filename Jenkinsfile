@@ -19,7 +19,7 @@ pipeline {
 
     stage('Subir servidor') {
       steps {
-        sh 'npx serverest --porta 3500'
+        sh 'npx serverest'
       }
     }
     
