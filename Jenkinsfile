@@ -17,9 +17,9 @@ pipeline {
       }
     }
 
-    stage('Executar Testes') {
+    stage('Subir server e executar Testes') {
       steps {
-        sh 'npx cypress run'
+        sh 'npm run cy:run-ci'
       }
     }
   }
