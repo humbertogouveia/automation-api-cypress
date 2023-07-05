@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:start": "npx serverest",
     "cy:test": "npx cypress run",
-    "cy:run-ci": "start-server-and-test cy:start http://localhost:3000/usuarios cy:test" 
+    "cy:run-ci": "start-server-and-test cy:start http://localhost:3000/ cy:test" 
     
   },
   "keywords": [],
