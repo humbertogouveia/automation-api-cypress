@@ -1,19 +1,22 @@
 {
-  "name": "ebac-cypress-api",
+  "name": "ebac-15-desafio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "teste.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "open api": "npx serverest --porta 3500",
-    "open": "npx cypress open",
-    "run": "npx cypress run"
+    "cy:start": "npx serverest",
+    "cy:test": "npx cypress run",
+    "cy:run-ci": "start-server-and-test cy:start http://localhost:3000/usuarios cy:test" 
+    
   },
   "keywords": [],
-  "author": "Humberto Gouveia",
+  "author": "",
   "license": "ISC",
   "dependencies": {
+    "@faker-js/faker": "^8.0.2",
     "cypress": "^12.16.0",
-    "joi": "^17.9.2"
+    "joi": "^17.9.2",
+    "start-server-and-test": "^2.0.0"
   }
 }
