@@ -11,7 +11,7 @@
     
   },
   "keywords": [],
-  "author": "",
+  "author": "Humberto Gouveia",
   "license": "ISC",
   "dependencies": {
     "@faker-js/faker": "^8.0.2",
